@@ -121,66 +121,17 @@
                     </div>
                 </div>
                 <div class="row">
+                    {% for post in posts %}
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="{% static 'img/a2.jpeg' %}" alt="">
+                            <img src={{ post.image.url }} alt="">
                             <div class="overlay-slide">
-                                <h2>Title Goes Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                                <h2>{{ post.title }}</h2>
+                                <p>{{ post.description }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-part">
-                            <img src="{% static 'img/a1.jpeg' %}" alt="">
-                            <div class="overlay-slide">
-                                <h2>Title Goes Here</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque eveniet esse
-                                    architecto ad quasi deleniti voluptatem reprehenderit ducimus consequatur?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-part">
-                            <img src="{% static 'img/a3.jpeg' %}" alt="">
-                            <div class="overlay-slide">
-                                <h2>Title Goes Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-part">
-                            <img src="{% static 'img/a4.jpeg' %}" alt="">
-                            <div class="overlay-slide">
-                                <h2>Title Goes Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-part">
-                            <img src="{% static 'img/a5.jpeg' %}" alt="">
-                            <div class="overlay-slide">
-                                <h2>Title Goes Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-part">
-                            <img src="{% static 'img/a6.jpeg' %}" alt="">
-                            <div class="overlay-slide">
-                                <h2>Title Goes Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
                 <div class="row">
                     <div class="col-md-12">
