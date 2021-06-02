@@ -157,17 +157,31 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="my-claint owl-carousel owl-theme">
+                            {% for coordinator in coordinators %}
                             <div class="item">
-                                <img src="{% static 'img/' %}" alt="">
+                                <img src={{ coordinator.profile_picture.url }} alt="">
                                 <div class="item-overlay"></div>
                                 <div class="item-text">
-                                    <h3>Name1</h3>
-                                    <h4>20XX-20XX</h4>
-                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i></a></p>
+                                    <h3>{{ coordinator.name }}</h3>
+                                    <h4>{{ coordinator.from_date }} - {{ coordinator.to_date }}</h4>
+
+                                    <p>
+                                        {% if coordinator.gmail %}
+                                        <a href="{{ coordinator.gmail }}"><i class="fa fa-google"
+                                                aria-hidden="true"></i></a>
+                                        {% endif %}
+                                        {% if coordinator.linkedin %}
+                                        <a href="{{ coordinator.linkedin }}"><i class="fa fa-linkedin"
+                                                aria-hidden="true"></i></a>
+                                        {% endif %}
+                                        {% if coordinator.insta %}
+                                        <a href="{{ coordinator.insta }}"><i class="fa fa-instagram"
+                                                aria-hidden="true"></i></a>
+                                        {% endif %}
+                                    </p>
                                 </div>
                             </div>
+                            {%endfor %}
 
                         </div>
                     </div>

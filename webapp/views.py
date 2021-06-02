@@ -5,5 +5,5 @@ from .models import *
 
 def index(request):
     posts = Post.objects.all().order_by('-id')[:6]
-    coordinator = Coordinator.objects.all().order_by('-id')[:6]
-    return render(request, 'index.html', {'posts': posts})
+    coordinators = Coordinator.objects.all().order_by('-id')[:6]
+    return render(request, 'index.html', {'posts': posts, 'coordinators': coordinators})
