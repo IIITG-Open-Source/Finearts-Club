@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,34 +9,35 @@
     <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="blue">
-                <img src="img/header-shepe-blue.png" alt="">
+                <img src="{% static 'img/header-shepe-blue.png' %}" alt="">
             </div>
             <div class="white">
-                <img src="img/header-shepe-white.png" alt="">
+                <img src="{% static 'img/header-shepe-white.png' %}" alt="">
             </div>
             <div class="container">
-                <img class="shepe1" src="img/shepe1.png" alt="">
+                <!-- <img class="shepe1" src="{% static 'img/shepe1.png' %}" alt="">
                 <img class="shepe2" src="img/shepe2.png" alt="">
                 <img class="shepe3" src="img/shepe2.png" alt="">
                 <img class="shepe4" src="img/shepe2.png" alt="">
                 <img class="shepe5" src="img/shepe1.png" alt="">
-                <img class="shepe6" src="img/shepe2.png" alt="">
+                <img class="shepe6" src="img/shepe2.png" alt=""> -->
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="logo">
-                            <h2><a class="navbar-brand" href="#"><img src="img/logo456.png" alt="image"></a></h2>
+                            <h2><a class="navbar-brand" href="#"><img src="{% static 'img/logo456.png' %}"
+                                        alt="image"></a></h2>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12">
@@ -48,9 +50,9 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
-               
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="header-text">
@@ -69,12 +71,12 @@
                             <div class="hero">
                             </div>
                             <h3>About Us</h3>
-                            
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem
-                                    ipsum dolor, sit amet consectetur adipisicing elit. Magni, nesciunt! Lorem ipsum
-                                    dolor
-                                    dolorum <br> incididunt
-                                </p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem
+                                ipsum dolor, sit amet consectetur adipisicing elit. Magni, nesciunt! Lorem ipsum
+                                dolor
+                                dolorum <br> incididunt
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="work-images">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HZRp6iRjnhQ"
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kZkLcdT0niE"
                                 frameborder="0" allowfullscreen></iframe>
                             <div class="overlay-text">
                                 <i class="material-icons">play_circle_filled</i>
@@ -121,7 +123,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="img/a2.jpeg" alt="">
+                            <img src="{% static 'img/a2.jpeg' %}" alt="">
                             <div class="overlay-slide">
                                 <h2>Title Goes Here</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -131,7 +133,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="img/a1.jpeg" alt="">
+                            <img src="{% static 'img/a1.jpeg' %}" alt="">
                             <div class="overlay-slide">
                                 <h2>Title Goes Here</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque eveniet esse
@@ -141,7 +143,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="img/a3.jpeg" alt="">
+                            <img src="{% static 'img/a3.jpeg' %}" alt="">
                             <div class="overlay-slide">
                                 <h2>Title Goes Here</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -151,7 +153,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="img/a4.jpeg" alt="">
+                            <img src="{% static 'img/a4.jpeg' %}" alt="">
                             <div class="overlay-slide">
                                 <h2>Title Goes Here</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -161,7 +163,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="img/a5.jpeg" alt="">
+                            <img src="{% static 'img/a5.jpeg' %}" alt="">
                             <div class="overlay-slide">
                                 <h2>Title Goes Here</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -171,7 +173,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="portfolio-part">
-                            <img src="img/a6.jpeg" alt="">
+                            <img src="{% static 'img/a6.jpeg' %}" alt="">
                             <div class="overlay-slide">
                                 <h2>Title Goes Here</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -205,7 +207,7 @@
                     <div class="col-md-12">
                         <div class="my-claint owl-carousel owl-theme">
                             <div class="item">
-                                <img src="img/team-member1.png" alt="">
+                                <img src="{% static 'img/' %}" alt="">
                                 <div class="item-overlay"></div>
                                 <div class="item-text">
                                     <h3>Name1</h3>
@@ -215,61 +217,7 @@
                                                 class="fa fa-instagram" aria-hidden="true"></i></a></p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <img src="img/team-member2.png" alt="">
-                                <div class="item-overlay"></div>
-                                <div class="item-text">
-                                    <h3>Name2</h3>
-                                    <h4>20XX-20XX</h4>
-                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/team-member3.png" alt="">
-                                <div class="item-overlay"></div>
-                                <div class="item-text">
-                                    <h3>Nmae3</h3>
-                                    <h4>20XX-20XX</h4>
-                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/team-member1.png" alt="">
-                                <div class="item-overlay"></div>
-                                <div class="item-text">
-                                    <h3>Name4</h3>
-                                    <h4>20XX-20XX</h4>
-                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/team-member2.png" alt="">
-                                <div class="item-overlay"></div>
-                                <div class="item-text">
-                                    <h3>Name5</h3>
-                                    <h4>20XX-20XX</h4>
-                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/team-member3.png" alt="">
-                                <div class="item-overlay"></div>
-                                <div class="item-text">
-                                    <h3>Name6</h3>
-                                    <h4>20XX-20XX</h4>
-                                    <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -277,10 +225,10 @@
         </section>
         <section class="contact">
             <div class="blue">
-                <img src="img/contact-shepe-blue.png" alt="">
+                <img src="{% static 'img/contact-shepe-blue.png' %}" alt="">
             </div>
             <div class="white">
-                <img src="img/contact-shepe-white.png" alt="">
+                <img src="{% static 'img/contact-shepe-white.png' %}" alt="">
             </div>
             <div class="container">
                 <div class="row">
@@ -324,7 +272,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="footer-icon">
-                            <h2><img src="img/logo456.png" alt="image"></h2>
+                            <h2><img src="{% static 'img/logo456.png' %}" alt="image"></h2>
                             <p><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a><a href="#"><i
                                         aria-hidden="true" class="fa fa-linkedin"></i></a><a href="#"><i
                                         class="fa fa-instagram" aria-hidden="true"></i></a></p>
@@ -350,10 +298,11 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/active.js"></script>
+
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/active.js' %}"></script>
 </body>
 
 </html>
