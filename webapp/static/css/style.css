@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
     background: #fbfbfb;
@@ -103,11 +104,15 @@ body {
     color: #fff;
 }
 
+.footer-text .footer-text-single h3 a{
+    color: #008F5As;
+}
+
 .wrapper header.header ul.nav.navbar-nav li a {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: #fff;
+    color: #1a2930;
     text-transform: uppercase;
 }
 
@@ -128,7 +133,7 @@ body {
 
 .wrapper header.header .header-text h1 {
     color: #1a2930;
-    font-family:'Pattaya', sans-serif;;
+    font-family: 'Acme', sans-serif;
     font-size: 65px;
     font-weight: 600;
     margin-bottom: 25px;
@@ -148,7 +153,7 @@ body {
 
 .wrapper header.header .header-text p {
     color: #2c4049;
-    font-family: 'Dancing Script', cursive;;
+    font-family: 'Roboto', sans-serif;;
     font-size: 25px;
     font-weight: 600;
     line-height: 35px;
@@ -170,11 +175,11 @@ body {
 
 .wrapper header.header .header-text button:hover {
     background: #fff;
-    color: #b611d7;
+    color: #155415;
 }
 
 .wrapper header.header .another-text h3 {
-    color: #56016c;
+    color:#008C77;
     font-family: 'Paprika', cursive;;
     font-size: 40px;
     font-weight: 700;
@@ -195,7 +200,7 @@ body {
 
 .wrapper header.header .another-text p {
     color: #202f36;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 32px;
@@ -344,7 +349,7 @@ body {
 }
 
 .wrapper section.works .work-text h2 {
-    color: #56016c;
+    color: #008C77;
     font-family:'Paprika', cursive; ;
     font-size: 40px;
     font-weight: 700;
@@ -362,10 +367,10 @@ body {
 }
 
 .wrapper section.works .work-text p {
-    color: #899ea9;
-    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 30px;
 }
 
@@ -416,7 +421,7 @@ body {
 }
 
 .wrapper section.portfolia .port-text h2 {
-    color: #56016c;
+    color: #008C77;
     font-family: 'Paprika', cursive;
     font-size: 40px;
     font-weight: 700;
@@ -433,10 +438,10 @@ body {
 }
 
 .wrapper section.portfolia .port-text p {
-    color: #738d99;
-    font-family: 'Raleway',sans-serif;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 30px;
 }
 
@@ -518,7 +523,7 @@ div.wrapper section.portfolia div.penination a{
 }
 
 .wrapper section.our-team .team-text h2 {
-    color: #56016c;
+    color: #008C77;
     font-family: 'Paprika', cursive;;
     font-size: 40px;
     font-weight: 700;
@@ -539,10 +544,10 @@ div.wrapper section.portfolia div.penination a{
 }
 
 .wrapper section.our-team .team-text p {
-    color: #bec9cf;
-    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 30px;
     margin: 0 auto;
     padding-top: 10px;
@@ -667,7 +672,7 @@ div.wrapper section.portfolia div.penination a{
 }
 
 .wrapper section.contact .contact-text h2 {
-    color: #56016c;
+    color: #008C77;
     font-family:'Paprika', cursive; ;
     font-size: 40px;
     font-weight: 700;
@@ -686,8 +691,8 @@ div.wrapper section.portfolia div.penination a{
 }
 
 .wrapper section.contact .contact-text p {
-    color: #92a5af;
-    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 600;
     padding-top: 5px;
