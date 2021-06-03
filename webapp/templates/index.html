@@ -205,23 +205,21 @@
                     </div>
                     <div class="col-md-8 col-sm-12">
                         <div class="contact-form">
-                            <form action="#" method="post">
+                            <form method="POST">
+                                {% csrf_token %}
                                 <div class="first">
-                                    <input type="text" name="" placeholder="First Name">
+                                    <input type="text" name="name" placeholder="Name">
                                 </div>
                                 <div class="last">
-                                    <input type="text" name="" placeholder="Last Name">
+                                    <input type="text" name="subject" placeholder="Subject">
                                 </div>
                                 <div class="email">
-                                    <input type="email" name="" placeholder="Email Address">
+                                    <input type="email" name="email" placeholder="Email Address">
                                 </div>
                                 <div class="message">
-                                    <textarea placeholder="Your Message"></textarea>
+                                    <textarea name="message" placeholder="Your Message"></textarea>
                                 </div>
                                 <div class="checkbox-submit">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" name="" checked> Allow Newsletter</label>
-                                    </div>
                                     <div class="submit">
                                         <input type="submit" value="SEND">
                                     </div>
@@ -238,10 +236,10 @@
                     <div class="col-md-4 col-sm-12">
                         <div class="footer-icon">
                             <h2><img src="{% static 'img/logo456.png' %}" alt="image"></h2>
-                            <p><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a><a href="#"><i
-                                        aria-hidden="true" class="fa fa-linkedin"></i></a><a href="#"><i
-                                        class="fa fa-instagram" aria-hidden="true"></i></a></p>
-
+                            <p><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+                                <a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-8">
