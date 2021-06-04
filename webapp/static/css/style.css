@@ -904,15 +904,15 @@ section .wave
     height: 437px;
     bottom: 0;
     left: 0;
-    background: url(/static/img/wave2.png);
-    animation: animate 20s linear infinite;
+    background: url(/static/img/wave4.png);
+    animation: animate 30s linear infinite;
 }
 
 section .wave:before{
     content: '';
     width: 100%;
     height: 437px;
-    background: url(/static/img/wave2.png);
+    background: url(/static/img/wave4.png);
     top: 0;
     left: 0;
 }
