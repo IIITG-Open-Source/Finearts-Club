@@ -8,6 +8,11 @@ body {
     cursor: url("../img/mouse.png"),pointer;
 }
 
+a{
+    cursor: url("../img/7890.png"),pointer;
+    text-decoration: none;
+}
+
 .wrapper header.header {
     background-image: url("../img/5.jpg");
     background-size: 100% auto;
@@ -350,7 +355,7 @@ body {
 }
 
 .wrapper section.works .work-text h2 {
-    color: #008C77;
+    color: #bb49a2;
     font-family:'Paprika', cursive; ;
     font-size: 40px;
     font-weight: 700;

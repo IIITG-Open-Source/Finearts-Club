@@ -22,7 +22,7 @@
 
 <body>
     <section>
-        <div class="wave"></div>    
+        <div class="wave"></div>
     </section>
     <div class="wrapper">
         <header class="header">
@@ -30,18 +30,13 @@
                 <img src="{% static 'img/header-shepe-blue.png' %}" alt="">
             </div> -->
             <section>
-                <div class="wave"></div>    
+                <div class="wave"></div>
             </section>
             <div class="white">
                 <!-- <img src="{% static 'img/wave1.png' %}" alt=""> -->
             </div>
             <div class="container">
-                 <!-- <img class="shepe1" src="{% static 'img/pallette.jpg ' %}" alt="">
-                <img class="shepe2" src="{% static 'img/shepe1.png' %}"alt="">
-                <img class="shepe3" src="{% static 'img/shepe1.png' %}" alt="">
-                <img class="shepe4" src="{% static 'img/shepe1.png' %}" alt="">
-                <img class="shepe5" src="{% static 'img/shepe1.png' %}" alt="">
-                <img class="shepe6" src="{% static 'img/shepe1.png' %}" alt="">  -->
+
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <div class="logo">
@@ -52,10 +47,12 @@
                     <div class="col-md-9 col-sm-9 col-xs-12">
                         <div class="menu">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">About</a></li>
-                                <li><a href="#">Events</a></li>
-                                <li><a href="#">Coordinators</a></li>
-                                <li><a href="#">Contact</a></li>
+
+                                <li class="active"><a href="#about">About</a></li>
+                                <li><a href="#events">Events</a></li>
+                                <li><a href="#coordinators">Coordinators</a></li>
+                                <li><a href="#contact">Contact</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -69,8 +66,8 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br>
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <br> nostrud
                                 exercitation</p>
-                            <button>Read More</button>
-                            <button>Explore</button>
+                            <button><a href="#about" type="button">Read More</a></button>
+                            <button><a href="#events" type="button">Explore</a></button>
                         </div>
                     </div>
                 </div>
@@ -93,151 +90,160 @@
         </header>
 
         </section>
-        <section class="works">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="work-images">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kZkLcdT0niE"
-                                frameborder="0" allowfullscreen></iframe>
-                            <div class="overlay-text">
-                                <i class="material-icons">play_circle_filled</i>
-                            </div>
+        <section id="about">
+            <section class="works">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="work-images">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kZkLcdT0niE"
+                                    frameborder="0" allowfullscreen></iframe>
+                                <div class="overlay-text">
+                                    <i class="material-icons">play_circle_filled</i>
+                                </div>
 
 
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="work-text-full">
-                            <div class="work-text">
-                                <h2>How It Works?</h2>
-                                <p>Its Simple. Check the video to understand How it works. Lorem Ipsum Dolor Sit Amet.
-                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolia">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="port-text">
-                            <h2>Recent Events!!</h2>
-                            <p>ILorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do eiusmod </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    {% for post in posts %}
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-part">
-                            <img src={{ post.image.url }} alt="">
-                            <div class="overlay-slide">
-                                <h2>{{ post.title }}</h2>
-                                <p>{{ post.description }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="penination">
-                            <a href="https://www.instagram.com/alankrit_iiitg/">
-                                <p>Artworks</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="our-team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="team-text">
-                            <h2>Coordinators</h2>
-                            <p>Meet Our Awesome Team. Lorem Ipsum dolor sit amet <br> Hola amigos como estas!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="my-claint owl-carousel owl-theme">
-                            {% for coordinator in coordinators %}
-                            <div class="item">
-                                <img src={{ coordinator.profile_picture.url }} alt="">
-                                <div class="item-overlay"></div>
-                                <div class="item-text">
-                                    <h3>{{ coordinator.name }}</h3>
-                                    <h4>{{ coordinator.from_date }} - {{ coordinator.to_date }}</h4>
-
-                                    <p>
-                                        {% if coordinator.gmail %}
-                                        <a href="{{ coordinator.gmail }}"><i class="fa fa-google"
-                                                aria-hidden="true"></i></a>
-                                        {% endif %}
-                                        {% if coordinator.linkedin %}
-                                        <a href="{{ coordinator.linkedin }}"><i class="fa fa-linkedin"
-                                                aria-hidden="true"></i></a>
-                                        {% endif %}
-                                        {% if coordinator.insta %}
-                                        <a href="{{ coordinator.insta }}"><i class="fa fa-instagram"
-                                                aria-hidden="true"></i></a>
-                                        {% endif %}
+                        <div class="col-md-5">
+                            <div class="work-text-full">
+                                <div class="work-text">
+                                    <h2>About Us</h2>
+                                    <p>Its Simple. Check the video to understand How it works. Lorem Ipsum Dolor Sit
+                                        Amet.
                                     </p>
                                 </div>
                             </div>
-                            {%endfor %}
-
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
-        <section class="contact">
-            <div class="blue">
-                <img src="{% static 'img/contact-shepe-blue.png' %}" alt="">
-            </div>
-            <div class="white">
-                <img src="{% static 'img/contact-shepe-white.png' %}" alt="">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="contact-text">
-                            <h2>Contact US!</h2>
-                            <p>Meet Our Awesome Team. Lorem Ipsum dolor sit amet Hola amigos como estas!</p>
+        <section id="events">
+            <section class="portfolia">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="port-text">
+                                <h2>Recent Events!!</h2>
+                                <p>ILorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do eiusmod </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-sm-12">
-                        <div class="contact-form">
-                            <form method="POST">
-                                {% csrf_token %}
-                                <div class="first">
-                                    <input type="text" name="name" placeholder="Name">
+                    <div class="row">
+                        {% for post in posts %}
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-part">
+                                <img src={{ post.image.url }} alt="">
+                                <div class="overlay-slide">
+                                    <h2>{{ post.title }}</h2>
+                                    <p>{{ post.description }}</p>
                                 </div>
-                                <div class="last">
-                                    <input type="text" name="subject" placeholder="Subject">
-                                </div>
-                                <div class="email">
-                                    <input type="email" name="email" placeholder="Email Address">
-                                </div>
-                                <div class="message">
-                                    <textarea name="message" placeholder="Your Message"></textarea>
-                                </div>
-                                <div class="checkbox-submit">
-                                    <div class="submit">
-                                        <input type="submit" value="SEND">
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="penination">
+                                <a href="https://www.instagram.com/alankrit_iiitg/">
+                                    <p>Artworks</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="coordinators">
+            <section class="our-team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="team-text">
+                                <h2>Coordinators</h2>
+                                <p>Meet Our Awesome Team. Lorem Ipsum dolor sit amet <br> Hola amigos como estas!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="my-claint owl-carousel owl-theme">
+                                {% for coordinator in coordinators %}
+                                <div class="item">
+                                    <img src={{ coordinator.profile_picture.url }} alt="">
+                                    <div class="item-overlay"></div>
+                                    <div class="item-text">
+                                        <h3>{{ coordinator.name }}</h3>
+                                        <h4>{{ coordinator.from_date }} - {{ coordinator.to_date }}</h4>
+
+                                        <p>
+                                            {% if coordinator.gmail %}
+                                            <a href="{{ coordinator.gmail }}"><i class="fa fa-google"
+                                                    aria-hidden="true"></i></a>
+                                            {% endif %}
+                                            {% if coordinator.linkedin %}
+                                            <a href="{{ coordinator.linkedin }}"><i class="fa fa-linkedin"
+                                                    aria-hidden="true"></i></a>
+                                            {% endif %}
+                                            {% if coordinator.insta %}
+                                            <a href="{{ coordinator.insta }}"><i class="fa fa-instagram"
+                                                    aria-hidden="true"></i></a>
+                                            {% endif %}
+                                        </p>
                                     </div>
                                 </div>
-                            </form>
+                                {%endfor %}
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </section>
+        <section id="contact">
+            <section class="contact">
+                <div class="blue">
+                    <img src="{% static 'img/contact-shepe-blue.png' %}" alt="">
+                </div>
+                <div class="white">
+                    <img src="{% static 'img/contact-shepe-white.png' %}" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="contact-text">
+                                <h2>Contact US!</h2>
+                                <p>Meet Our Awesome Team. Lorem Ipsum dolor sit amet Hola amigos como estas!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="contact-form">
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    <div class="first">
+                                        <input type="text" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="last">
+                                        <input type="text" name="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="email">
+                                        <input type="email" name="email" placeholder="Email Address">
+                                    </div>
+                                    <div class="message">
+                                        <textarea name="message" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="checkbox-submit">
+                                        <div class="submit">
+                                            <input type="submit" value="SEND">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
         <footer class="footer">
             <div class="container">
@@ -256,10 +262,10 @@
                             <div class="row">
                                 <div class="col-md-3 col-sm-6 col-xs-6">
                                     <div class="footer-text-single">
-                                        <h3><a href="#"><strong>About Us</strong></a></h3>
-                                        <h3><a href="#"><strong>Recent Events</strong></a></h3>
-                                        <h3><a href="#"><strong>Coordinators</strong></a></h3>
-                                        <h3><a href="#"><strong>Contact Us</strong></a></h3>
+                                        <h3><a href="#about"><strong>About Us</strong></a></h3>
+                                        <h3><a href="#events"><strong>Recent Events</strong></a></h3>
+                                        <h3><a href="#coordinators"><strong>Coordinators</strong></a></h3>
+                                        <h3><a href="#contact"><strong>Contact Us</strong></a></h3>
                                     </div>
                                 </div>
 
