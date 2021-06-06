@@ -13,8 +13,9 @@ def index(request):
         name = request.POST['subject']
         email = request.POST['email']
         message = request.POST['message']
+
         if name != "" and email != "" and subject != "":
-            send_mail(subject, message, email, [
-                      'alankrit.iiitg@gmail.com'], fail_silently=False)
+            message = message + '\n\nFrom :- ' + email + '\n' + name
+            send_mail(subject, message, email, ['alankrit.iiitg@gmail.com'])
     
     return render(request, 'index.html', {'posts': posts, 'coordinators': coordinators})
