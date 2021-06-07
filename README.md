@@ -20,3 +20,7 @@ The backend of the webapp is made using Django Framework. For styling and ehanci
     ```python manage.py runserver```
 
 5. You can view the webapp by going to the [local host](http://127.0.0.1:8000/) on you web browser
+
+
+### Contributors :
+[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
