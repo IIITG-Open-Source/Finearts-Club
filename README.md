@@ -44,6 +44,10 @@ The backend of the webapp is made using Django Framework. For styling and ehanci
 To contribute to the project Fork the repository, clone it on you local machine. Read the [guidelines](https://github.com/IIITG-Open-Source/Guidelines) before creating any pull request. 
 Wait untill your pull request is acknowledged by the project maintainers.
 
-### Contributors
+### Contributors :
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
 
 
