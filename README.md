@@ -6,8 +6,8 @@ This is the official website (webapp) of Fine-Arts club of IIITG (Alankrit). The
 
 
 ### Description :
-The website has different portions, the Recent Events Section displays the recent events held by the Club.\
-The main frame is made using CSS keyframes and Bootstrap. \
+The website has different portions, The main frame is made using CSS keyframes and Bootstrap. \
+The Recent Events Section displays the recent events held by the Club.\
 To view the artworks made by the students one can click on the Artworks button below the Recent Events which takes the user to the instagram handel of Alankrit which is updated regularly with the artwork of students. \
 The Coordinator section has the list past coordinators along their handels to contact them. \
 The Contact Us sectoin is made using the smtplib module which provides a mail sending interface, a user can send any query using the contact us section. \
@@ -24,7 +24,7 @@ The backend of the webapp is made using Django Framework. For styling and ehanci
 
 2. Activate your virtual environment using : 
     
-    ```env/Scripts/activate``` \
+    ```env/Scripts/activate``` 
     
     Here env is the name of virtual environment.
 
@@ -44,4 +44,4 @@ The backend of the webapp is made using Django Framework. For styling and ehanci
 To contribute to the project Fork the repository, clone it on you local machine. Read the [guidelines](https://github.com/IIITG-Open-Source/Guidelines) before creating any pull request. 
 Wait untill your pull request is acknowledged by the project maintainers.
 
-### Contributors :
+### Contributors
