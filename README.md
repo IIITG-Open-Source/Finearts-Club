@@ -1,11 +1,22 @@
-# IIITG-Finearts-Club
+# IIITG-Finearts-Club (Alankrit)
 
-### Steps to install the project :
+This is the official website (webapp) of Fine-Arts club of IIITG (Alankrit). The site is to showcase the art works of students in various art events. 
 
-1. Create a virtual environment.
+### Tech / Framework used :
+The backend of the webapp is made using Django Framework. For styling and ehancing the look Bootstrap , CSS and Javascript is used.
 
-2. Install all the requirements :
-```pip install -r requirements.txt```
+### Installation :
 
-3. Run the project using :
-```python manage.py runserver```
+1. Create a virtual environment. You can use this [link](https://docs.python.org/3/library/venv.html) for reference.
+
+2. Activate your virtual environment using :
+    ```env/Scripts/activate```
+    Here env is the name of virtual environment.
+
+3. Install all the requirements required to run the project :
+    ```pip install -r requirements.txt```
+
+4. Run the project :
+    ```python manage.py runserver```
+
+5. You can view the webapp by going to the [local host](http://127.0.0.1:8000/) on you web browser
