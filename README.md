@@ -47,6 +47,37 @@ Wait untill your pull request is acknowledged by the project maintainers.
 ### Contributors :
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/manan2110">
+            <img src="https://avatars.githubusercontent.com/u/55996661?v=4" width="100;" alt="manan2110"/>
+            <br />
+            <sub><b>Manan Gyanchandani</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/khushi200701">
+            <img src="https://avatars.githubusercontent.com/u/58480229?v=4" width="100;" alt="khushi200701"/>
+            <br />
+            <sub><b>Khushi</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/solinabasak">
+            <img src="https://avatars.githubusercontent.com/u/54628003?v=4" width="100;" alt="solinabasak"/>
+            <br />
+            <sub><b>solinabasak</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Technical-Board-IIITG">
+            <img src="https://avatars.githubusercontent.com/u/58619800?v=4" width="100;" alt="Technical-Board-IIITG"/>
+            <br />
+            <sub><b>Technical-Board-IIITG</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 
