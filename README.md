@@ -11,7 +11,7 @@ The main frame is made using CSS keyframes and Bootstrap. \
 To view the artworks made by the students one can click on the Artworks button below the Recent Events which takes the user to the instagram handel of Alankrit which is updated regularly with the artwork of students. \
 The Coordinator section has the list past coordinators along their handels to contact them. \
 The Contact Us sectoin is made using the smtplib module which provides a mail sending interface, a user can send any query using the contact us section. \
-The current club coordinators can manage the site (add recent events, update coordinators) using the django admin panel. \n
+The current club coordinators can manage the site (add recent events, update coordinators) using the django admin panel. \
 
 
 
