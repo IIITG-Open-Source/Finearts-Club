@@ -9,17 +9,17 @@ The backend of the webapp is made using Django Framework. For styling and ehanci
 
 1. Create a virtual environment. You can use this [link](https://docs.python.org/3/library/venv.html) for reference.
 
-2. Activate your virtual environment using :
+2. Activate your virtual environment using : \
     
-    ```env/Scripts/activate```
+    ```env/Scripts/activate``` \
     
     Here env is the name of virtual environment.
 
-3. Install all the requirements required to run the project :
+3. Install all the requirements required to run the project : \
     
     ```pip install -r requirements.txt```
 
-4. Run the project :
+4. Run the project : \
     
     ```python manage.py runserver```
 
