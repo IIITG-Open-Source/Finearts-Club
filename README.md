@@ -2,7 +2,7 @@
 
 This is the official website (webapp) of Fine-Arts club of IIITG (Alankrit). The site is to showcase the art works of students in various art events. 
 
-### Tech / Framework used :
+### Tech stack / Framework used :
 The backend of the webapp is made using Django Framework. For styling and ehancing the look Bootstrap , CSS and Javascript is used.
 
 ### Installation :
@@ -23,4 +23,3 @@ The backend of the webapp is made using Django Framework. For styling and ehanci
 
 
 ### Contributors :
-[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/IIITG-Open-Source/IIITG-Finearts-Club/graphs/contributors)
