@@ -1,4 +1,4 @@
-# IIITG-Finearts-Club (Alankrit)
+# Finearts-Club (Alankrit)
 
 This is the official website (webapp) of Fine-Arts club of IIITG (Alankrit). The site is to showcase the artworks of students in various art events. 
 
