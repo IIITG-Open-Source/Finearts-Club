@@ -67,7 +67,7 @@ Wait untill your pull request is acknowledged by the project maintainers.
         <a href="https://github.com/solinabasak">
             <img src="https://avatars.githubusercontent.com/u/54628003?v=4" width="100;" alt="solinabasak"/>
             <br />
-            <sub><b>solinabasak</b></sub>
+            <sub><b>Solinabasak</b></sub>
         </a>
     </td>
     <td align="center">
